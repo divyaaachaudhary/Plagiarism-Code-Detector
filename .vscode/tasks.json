@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Tokeniser",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "Tokeniser.cpp",
+                "-o",
+                "Tokeniser.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
